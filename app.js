@@ -23,7 +23,13 @@ box2.addEventListener('click', () => {
 })
 
 box3.addEventListener('click', () => {
+    if (box3.classList.contains('orange')) {
+        box3.classList.add('green')
+        box3.classList.remove('orange')
+        box3.classList.remove('circle')
+} else {
     box3.classList.remove('green')
     box3.classList.add('orange')
     box3.classList.add('circle')
+}
 })
